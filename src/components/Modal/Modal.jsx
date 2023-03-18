@@ -1,4 +1,4 @@
-import React from 'react';
+import { useEffect } from 'react';
 import { IoClose } from 'react-icons/io5';
 import {
   Backdrop,
@@ -26,8 +26,27 @@ import {
 import logo from '../../images/paypal-logo.svg';
 
 export const Modal = ({ closeModal }) => {
+  const handleClickBackdrop = e => {
+    if (e.target === e.currentTarget) {
+      closeModal();
+    }
+  };
+
+  useEffect(() => {
+    const handlePressEscape = e => {
+      if (e.code === 'Escape') {
+        closeModal();
+      }
+    };
+    window.addEventListener('keydown', handlePressEscape);
+
+    return () => {
+      window.removeEventListener('keydown', handlePressEscape);
+    };
+  }, [closeModal]);
+
   return (
-    <Backdrop>
+    <Backdrop onClick={handleClickBackdrop}>
       <ModalContent>
         <WrapHeader>
           <WrapLogo>

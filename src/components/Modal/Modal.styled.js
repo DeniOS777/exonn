@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import paypal_bg from '../../images/paypal-bg.png';
 
 export const Backdrop = styled.div`
   position: fixed;
@@ -30,6 +31,11 @@ export const WrapHeader = styled.div`
   padding-left: 48px;
   padding-right: 48px;
   margin-bottom: 32px;
+  background-image: url(${paypal_bg});
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-y: 107px;
+  background-position-x: 230px;
 `;
 
 export const WrapLogo = styled.div`
