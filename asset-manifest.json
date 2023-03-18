@@ -1,15 +1,16 @@
 {
   "files": {
     "main.css": "/exonn/static/css/main.17654e45.css",
-    "main.js": "/exonn/static/js/main.78093828.js",
+    "main.js": "/exonn/static/js/main.9e92728e.js",
     "static/media/zero-percent.png": "/exonn/static/media/zero-percent.37641c666323b3de550b.png",
+    "static/media/paypal-bg.png": "/exonn/static/media/paypal-bg.09b69d68b91644aa993e.png",
     "static/media/paypal-logo.svg": "/exonn/static/media/paypal-logo.94fd1f63d6dd280ee2eef800ef03ae56.svg",
     "index.html": "/exonn/index.html",
     "main.17654e45.css.map": "/exonn/static/css/main.17654e45.css.map",
-    "main.78093828.js.map": "/exonn/static/js/main.78093828.js.map"
+    "main.9e92728e.js.map": "/exonn/static/js/main.9e92728e.js.map"
   },
   "entrypoints": [
     "static/css/main.17654e45.css",
-    "static/js/main.78093828.js"
+    "static/js/main.9e92728e.js"
   ]
 }
